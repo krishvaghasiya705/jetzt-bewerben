@@ -1,0 +1,257 @@
+@import "../../styles/index.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--colorblack);
+    padding: 63px 45px 36px 44px;
+
+    .footer-main-flx {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        max-width: 1430px;
+        margin: 0 auto;
+
+        .footer-contant-one {
+
+            h1 {
+                color: var(--colorwhite);
+                font-family: var(--font-family1);
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 57px;
+                text-align: left;
+                margin: 0 0 28px 0;
+                max-width: 325px;
+            }
+
+            p {
+                color: var(--colorwhite);
+                font-family: var(--font-family2);
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+                margin: 0 0 28px 0;
+            }
+
+            div {
+                cursor: pointer;
+                width: max-content;
+                transition: .5s ease-in-out;
+
+                svg {
+                    transition: .5s ease-in-out;
+
+                    path {
+                        transition: .5s ease-in-out;
+                        fill: var(--colorwhite);
+                        stroke-width: 1px;
+                        stroke-dasharray: 4500;
+                    }
+                }
+
+                &:hover {
+                    transition: .5s ease-in-out;
+
+                    svg {
+                        transition: .5s ease-in-out;
+
+                        path {
+                            transition: .5s ease-in-out;
+                            fill: var(--colorwhite);
+                            stroke: var(--color2);
+                            stroke-width: 1px;
+                            stroke-dasharray: 4500;
+                            animation: draw 10s ease-in-out;
+
+                            @keyframes draw {
+                                0% {
+                                    stroke-dashoffset: 4500;
+                                }
+
+                                100% {
+                                    stroke-dashoffset: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-contant-two {
+            text-align: left;
+
+            h2 {
+                font-family: var(--font-family2);
+                color: var(--colorwhite);
+                margin: 0 0 26px 0;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+            }
+
+            p {
+                font-family: var(--font-family2);
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 29px;
+                text-align: left;
+                color: var(--color3);
+
+                span {
+                    display: block;
+                    margin: 30px 0 0 0;
+                    max-width: 139px;
+                }
+            }
+        }
+
+        .footer-contant-three {
+            text-align: left;
+
+            h2 {
+                font-family: var(--font-family2);
+                color: var(--colorwhite);
+                margin: 0 0 26px 0;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+            }
+
+
+            .social-links-main {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 31px;
+                margin: 0 0 30px 0;
+
+                a {
+                    text-decoration: none;
+
+                    div {
+                        width: 22px;
+                        height: 20px;
+
+                        svg {
+                            fill: var(--colorwhite);
+                        }
+                    }
+                }
+            }
+
+            a {
+                text-decoration-line: none;
+
+                span {
+                    font-family: var(--font-family2);
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 29px;
+                    text-align: left;
+                    color: var(--color3);
+                    cursor: pointer;
+                    display: block;
+                    margin: 0;
+                }
+            }
+        }
+
+        .footer-contant-four {
+            text-align: left;
+
+            h2 {
+                font-family: var(--font-family2);
+                color: var(--colorwhite);
+                margin: 0 0 34px 0;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+            }
+
+            button {
+                padding: 5px 5px 5px 30px;
+                border: 2px solid var(--color4);
+                border-radius: 52px;
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 206px;
+                font-family: var(--font-family2);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20px;
+                color: var(--colorwhite);
+                cursor: pointer;
+                transition: .5s ease-in-out;
+
+                div {
+                    transition: .5s ease-in-out;
+                    width: 42px;
+                    height: 42px;
+
+                    svg {
+                        transition: .5s ease-in-out;
+                        fill: none;
+                        border-radius: 50%;
+
+                        rect {
+                            transition: .5s ease-in-out;
+                            fill: var(--colorwhite);
+                        }
+
+                        path {
+                            transition: .5s ease-in-out;
+                            stroke: var(--colorblack);
+                        }
+                    }
+                }
+
+                &:hover {
+                    transition: .5s ease-in-out;
+                    border: 2px solid var(--colorwhite);
+
+                    div {
+                        transition: .5s ease-in-out;
+
+                        svg {
+                            outline: 2px solid var(--colorwhite);
+                            transition: .5s ease-in-out;
+
+                            rect {
+                                transition: .5s ease-in-out;
+                                fill: var(--colorblack);
+                            }
+
+                            path {
+                                stroke: var(--colorwhite);
+                                transition: .5s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

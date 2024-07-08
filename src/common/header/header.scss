@@ -1,0 +1,117 @@
+@import "../../styles/index.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0 0 21px 0;
+    padding: 14px 56px 14px 66px;
+    text-align: center;
+    z-index: 9;
+    padding: 14px 24px 14px 34px;
+    border-radius: 19px;
+    border: 1px solid #C0BBB5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo-and-contant-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .headerlogo-text-main {
+
+            a {
+                text-decoration-line: none;
+
+                h1 {
+                    color: var(--colorblack);
+                    max-width: 60px;
+                    font-family: var(--font-family1);
+                    font-size: 15px;
+                    font-weight: 800;
+                    line-height: 13px;
+                    text-align: left;
+                    margin: 0 115px 0 0;
+                }
+            }
+        }
+
+        .header-contant-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 72px;
+
+            @include breakpoint ("lg-max") {
+                gap: 50px;
+            }
+
+            p {
+                cursor: pointer;
+                color: var(--colorblack);
+                font-family: var(--font-family1);
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 18px;
+                text-align: left;
+
+                span {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .header-links-contant-main {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+
+        .linked-in-icon {
+            width: 21px;
+            height: 20px;
+        }
+
+        .instagram-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .Jetzt-icon-text-main {
+
+            a {
+                text-decoration-line: none;
+
+                h2 {
+                    font-family: var(--font-family1);
+                    color: var(--color1);
+                    font-size: 20px;
+                    font-style: italic;
+                    font-weight: 800;
+                    line-height: 11px;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

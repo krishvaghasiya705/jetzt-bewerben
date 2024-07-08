@@ -1,0 +1,340 @@
+@import "../../../styles/index.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+
+    .herobanner-main {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .herobanner-box-one {
+            max-width: 694px;
+
+            .herrobanner-box-one-inner-box-one {
+                width: fit-content;
+                padding: 49px 38px 49px 38px;
+                border-radius: 40px;
+                background-color: var(--colorbackground1);
+                box-sizing: border-box;
+                display: flex;
+                gap: 170px;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 0 10px 0;
+
+                h2 {
+                    max-width: 618px;
+                    font-family: var(--font-family2);
+                    font-size: 77px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    text-align: left;
+
+                }
+
+                h3 {
+                    font-family: var(--font-family1);
+                    color: var(--colorblack);
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-align: left;
+                    margin: 0 0 10px 0;
+                }
+
+                p {
+                    font-family: var(--font-family1);
+                    color: var(--colorblack);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+
+            .herrobanner-box-one-inner-box-two {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                gap: 10px;
+
+                .herobanner-unser-box-main {
+                    position: relative;
+
+                    img {
+                        width: auto;
+                    }
+
+                    .unser-box-inner {
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 33px 27px 33px 27px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: end;
+
+                        h4 {
+                            color: var(--colorwhite);
+                            font-family: var(--font-family1);
+                            font-size: 26px;
+                            font-weight: 800;
+                            line-height: 18px;
+                        }
+                    }
+                }
+
+                .herobanner-worlofprimus-box-main {
+                    position: relative;
+
+                    img {
+                        width: auto;
+                    }
+
+                    .primus-box-inner {
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 33px 27px 33px 27px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+
+                        h4 {
+                            color: var(--colorwhite);
+                            font-family: var(--font-family1);
+                            font-size: 26px;
+                            font-weight: 800;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .herobanner-box-two {
+            max-width: 692px;
+
+            .jetzt-herobanner-side-section-main {
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                position: relative;
+
+                img {
+                    width: auto;
+                }
+
+                .jetzt-herobanner-side-section-inner-main-ab {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+
+                    .jetzt-herobanner-side-section-inner-main-rl {
+                        position: relative;
+                        width: 100%;
+                        height: calc(100% - 4px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+
+                        .jetztbewerben-circle-main {
+                            position: absolute;
+                            top: 152px;
+                            left: 50%;
+                            transform: translateX(-50%);
+
+                            .jetztbewerben-circle {
+                                width: 153px;
+                                height: 153px;
+                                border-radius: 50%;
+                                border: 2px solid var(--color1);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+
+                                p {
+                                    max-width: min-content;
+                                    color: var(--color1);
+                                    font-family: var(--font-family1);
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 20px;
+                                    text-align: left;
+                                }
+                            }
+                        }
+
+                        .uberuns-and-kontakt-button-main {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 30px;
+                            margin: 0 0 36px 0;
+
+                            button:nth-child(1) {
+                                width: 198px;
+                                border-radius: 28px;
+                                padding: 7px 7px 7px 20px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border: none;
+                                background-color: var(--colorwhite);
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+
+                                p {
+                                    transition: .3s ease-in-out;
+                                    font-family: var(--font-family1);
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    line-height: 18px;
+                                    color: var(--colorblack);
+                                }
+
+                                div {
+                                    transition: .3s ease-in-out;
+                                    height: 24px;
+
+                                    svg {
+                                        transition: .3s ease-in-out;
+                                        fill: var(--colorblack);
+
+                                        path {
+                                            transition: .3s ease-in-out;
+                                            stroke: var(--colorwhite);
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    background-color: transparent;
+                                    outline: 1px solid var(--color1);
+                                    transition: .3s ease-in-out;
+
+                                    p {
+                                        transition: .3s ease-in-out;
+                                        color: var(--color1);
+                                    }
+
+                                    div {
+                                        transition: .3s ease-in-out;
+
+                                        svg {
+                                            transition: .3s ease-in-out;
+                                            fill: var(--color1);
+
+                                            path {
+                                                transition: .3s ease-in-out;
+                                                stroke: var(--colorwhite);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            button:nth-child(2) {
+                                width: 198px;
+                                border-radius: 28px;
+                                padding: 7px 7px 7px 20px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border: none;
+                                background-color: transparent;
+                                cursor: pointer;
+                                outline: 1px solid var(--color1);
+                                transition: .3s ease-in-out;
+
+                                p {
+                                    transition: .3s ease-in-out;
+                                    font-family: var(--font-family1);
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    line-height: 18px;
+                                    color: var(--color1);
+                                }
+
+                                div {
+                                    transition: .3s ease-in-out;
+                                    height: 24px;
+
+                                    svg {
+                                        transition: .3s ease-in-out;
+
+                                        rect {
+                                            transition: .3s ease-in-out;
+                                            fill: var(--color1);
+                                        }
+
+                                        path {
+                                            transition: .3s ease-in-out;
+                                            stroke: var(--colorwhite);
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    background-color: var(--colorwhite);
+                                    transition: .3s ease-in-out;
+                                    outline: none;
+
+                                    p {
+                                        transition: .3s ease-in-out;
+                                        color: var(--colorblack);
+                                    }
+
+                                    div {
+                                        transition: .3s ease-in-out;
+
+                                        svg {
+                                            transition: .3s ease-in-out;
+
+                                            rect {
+                                                transition: .3s ease-in-out;
+                                                fill: var(--colorblack);
+                                            }
+
+                                            path {
+                                                transition: .3s ease-in-out;
+                                                stroke: var(--colorwhite);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
